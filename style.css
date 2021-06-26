@@ -71,13 +71,14 @@ main {
 }
 
 .parship-wrap {
+  position: relative;
   width: 100%;
-  padding: 35px;
+  /* padding: 35px; */
   border: 1px solid #737373;
   border-radius: 7px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .col {
@@ -97,6 +98,7 @@ main {
 footer {
   position: absolute;
   bottom: 0;
+  margin-top: 30px;
 }
 
 footer nav {
@@ -150,4 +152,32 @@ footer nav {
 
 .col-one img {
   margin: 70px auto 50px auto;
+}
+
+.band {
+  position: absolute;
+  right: 0;
+  width: 350px;
+  text-align: center;
+  border-top: 30px solid #bf243b;
+  border-left: 20px solid transparent;
+  border-radius: 3px;
+  color: black;
+  font-weight: bolder;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+.parship-content {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.band-text {
+  position: absolute;
+  top: -25px;
+  right: 50px;
+  color: #fff;
 }
