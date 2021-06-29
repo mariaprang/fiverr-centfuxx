@@ -112,8 +112,7 @@ footer {
   width: 100%;
   background: red;
   height: 100px; */
-    margin-top: auto;
-  
+  margin-top: auto;
 }
 
 footer nav {
@@ -121,14 +120,15 @@ footer nav {
 }
 
 .col-two {
-  width: 65%;
+  width: 70%;
 }
 
 .advantage-text {
   width: fit-content;
 }
+
 .advantage-text img {
-  width: 20px;
+  width: 25px;
   margin: 5px 10px;
 }
 
