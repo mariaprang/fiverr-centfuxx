@@ -9,12 +9,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+header {
+  max-height: 87px !important;
+}
 
 header,
 footer {
   padding: 25px 0;
   background-color: #e8e8e8;
   width: 100%;
+}
+
+header img {
+  max-height: 37px;
 }
 
 .header-row {
@@ -27,7 +34,8 @@ footer {
   flex-direction: row;
 }
 
-nav {
+.header-navbar,
+.footer-nav {
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -196,4 +204,67 @@ footer nav {
   top: -25px;
   right: 50px;
   color: #fff;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  z-index: 1000000000;
+}
+
+
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.responsive-nav {
+  display: none;
+}
+
+.resp {
+  position: relative;
+  z-index: 1000000;
+  top: -25px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 50px;
+  width: 300px;
+  height: 50vh;
+  transition-delay:  ease-in 2s;
+}
+
+.wrap {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+
+.responsive-nav a {
+  margin: 15px 0;
 }
