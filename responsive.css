@@ -1,22 +1,9 @@
-@media only screen and (max-width: 1023px) {
-  /* body {
-    background-color: red !important;
-  } */
-}
-
-/* @media only screen and (max-width: 768px) { */
-
 @media only screen and (max-width: 950px) {
+  .wrap {
+    display: block;
+  }
   .container {
     display: inline-block;
-  }
-
-  .responsive-nav {
-    /* display: flex;
-    flex-direction: column;
-    background-color: red;
-    width: 200px;
-    height: 100vh; */
   }
 
   .header-navbar {
@@ -80,4 +67,9 @@
 }
 
 @media only screen and (max-width: 510px) {
+  .band-text {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 }

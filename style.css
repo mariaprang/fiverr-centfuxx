@@ -26,7 +26,7 @@ header img {
 
 .header-row {
   justify-content: space-between;
-  margin: 0 100px;
+  margin: 0 10%;
 }
 
 .row {
@@ -64,7 +64,7 @@ main {
 .main-wrap {
   min-height: 100%;
   width: 80%;
-  margin: 0 100px;
+  margin: 0 10%;
   font-family: "Raleway", sans-serif;
 }
 
@@ -142,6 +142,7 @@ footer nav {
 
 .col-three {
   text-align: center;
+  align-self: center;
 }
 
 .stars-row {
@@ -214,8 +215,6 @@ footer nav {
   z-index: 1000000000;
 }
 
-
-
 .bar1,
 .bar2,
 .bar3 {
@@ -242,23 +241,32 @@ footer nav {
 
 .responsive-nav {
   display: none;
-}
-
-.resp {
-  position: relative;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+  position: fixed;
   z-index: 1000000;
-  top: -25px;
+  top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 50px;
-  width: 300px;
-  height: 50vh;
-  transition-delay:  ease-in 2s;
+  min-width: 300px;
+  height: 100vh;
+  /* transition-delay: ease-in 2s; */
+  box-shadow: -10px 0px 10px 1px #7a7979;
+}
+
+.responsive-nav.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .wrap {
+  display: none;
   position: relative;
   top: 0;
   right: 0;
@@ -267,4 +275,24 @@ footer nav {
 
 .responsive-nav a {
   margin: 15px 0;
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.layer.show {
+  opacity: 1;
+  visibility: visible;
 }
